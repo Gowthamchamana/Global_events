@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style>
+
+		/* Styling the body */
+		body {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 400px;
+			background-image:url("events.jpg");
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-position: -5% 45%;
+			background-color: rgba(105, 217, 254, 0.696);
+			
+		}
+		
+		/* Styling section, giving background
+			image and dimensions */
+		section {
+			width: 100%;
+			height: 100vh;
+			background-size: cover;
+		}
+		
+		/* Styling the left floating section */
+		section .leftBox {
+			width: 50%;
+			height: 100%;
+			float: left;
+			padding: 50px;
+			box-sizing: border-box;
+            
+			
+            }
+		/* Styling the background of
+			left floating section */
+		section .leftBox .content {
+			color: rgb(30, 29, 96);
+			background: rgba(42, 81, 119, 0.5);
+			padding: 40px;
+			transition: .5s;
+		}
+		
+		/* Styling the hover effect
+			of left floating section */
+		section .leftBox .content:hover {
+			background: #e91e63;
+		}
+		
+		/* Styling the header of left
+			floating section */
+		section .leftBox .content h1 {
+			margin: 0;
+			padding: 0;
+			font-size: 50px;
+			text-transform: uppercase;
+		}
+		
+		/* Styling the paragraph of
+			left floating section */
+		section .leftBox .content p {
+			margin: 10px 0 0;
+			padding: 0;
+		}
+		
+		/* Styling the three events section */
+		section .events {
+			position: relative;
+			width: 50%;
+			height: 120%;
+			background: rgba(232, 125, 11, 0.5);
+			float: right;
+			box-sizing: border-box;
+		}
+		
+		/* Styling the links of
+		the events section */
+		section .events ul {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			margin: 0;
+			padding: 40px;
+			box-sizing: border-box;
+		}
+		
+		/* Styling the lists of the event section */
+		section .events ul li {
+			list-style: none;
+			background: rgb(174, 166, 240);
+			box-sizing: border-box;
+			height: 200px;
+			margin: 15px 0;
+		}
+		
+		/* Styling the time class of events section */
+		section .events ul li .time {
+			position: relative;
+			padding: 20px;
+			background: #163556;
+			box-sizing: border-box;
+			width: 30%;
+			height: 100%;
+			float: left;
+			text-align: center;
+			transition: .5s;
+		}
+		
+		/* Styling the hover effect
+			of events section */
+		section .events ul li:hover .time {
+			background: #e91e63;
+		}
+		
+		/* Styling the header of time
+			class of events section */
+		section .events ul li .time h2 {
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #fff;
+			font-size: 60px;
+			line-height: 30px;
+		}
+		
+		/* Styling the texts of time
+		class of events section */
+		section .events ul li .time h2 span {
+			font-size: 30px;
+		}
+		
+		/* Styling the details
+		class of events section */
+		section .events ul li .details {
+			padding: 20px;
+			background: #fff;
+			box-sizing: border-box;
+			width: 70%;
+			height: 100%;
+			float: left;
+		}
+		
+		/* Styling the header of the
+		details class of events section */
+		section .events ul li .details h3 {
+			position: relative;
+			margin: 0;
+			padding: 0;
+			font-size: 22px;
+		}
+		
+		/* Styling the lists of details
+		class of events section */
+		section .events ul li .details p {
+			position: relative;
+			margin: 10px 0 0;
+			padding: 0;
+			font-size: 16px;
+		}
+		
+		/* Styling the links of details
+		class of events section */
+		section .events ul li .details a {
+			display: inline-block;
+			text-decoration: none;
+			padding: 10px 15px;
+			border: 1.5px solid #262626;
+			margin-top: 8px;
+			font-size: 18px;
+			transition: .5s;
+		}
+		
+		/* Styling the details class's hover effect */
+		section .events ul li .details a:hover {
+			background: #e91e63;
+			color: #fff;
+			border-color: #e91e63;
+		}
+      
+	.navbar	ul {  
+  list-style-type: none;  
+  width: 100%;
+  margin: 0;  
+  padding: 0px;  
+  overflow: hidden;  
+  background-color: #24252A;  
+}  
+
+.navbar ul li {  
+  float: left;  
+}  
+  
+.navbar ul li a {  
+  display: block;  
+  color: white;  
+ font-size:20px;  
+  text-align: center;  
+  padding: 10px 20px;  
+  text-decoration: none;  
+}  
+.active{  
+background-color: #0088a9;  
+color: white;  
+}  
+.navbar ul li a:hover {  
+  background-color: #0088a9;  
+  color: white;  
+}  
+ 
+	</style>
+</head>
+
+<body>
+<div class="navbar">
+	<ul>  
+		<li><a class="active" href="#home">Home</a></li>  
+		<li><a href="login.html">Login</a></li>  
+		<li><a href="payment.html">payment</a></li>
+		<li><a href="newcontact.html">Contact</a></li>  
+		<li><a href="about.html">About</a></li>  
+	  </ul>  
+</div>
+	 
+	<section>
+		<div class="leftBox">
+			<div class="content">
+				<h1>
+					GLOBAL EVENTS
+				</h1>
+				
+<p>
+                    International and National events
+                    are marked to raiseawareness and
+                    educate the citizens.They revolve 
+                    around different categories like education, health, social issues, and more.
+                    One of the trends to emerge from the COVID-19 pandemic is the increased
+                     popularity and prevalence of global events. Virtual events became the 
+                     norm when people were no longer able to meet in person for conferences,
+                      trade shows, and other events. Event organizers realized that this 
+                      broadened their market reach, giving them access to an audience and
+                       customer base that might not have been able to attend.As we look
+                        toward a globalized future, global virtual and hybrid events will
+                         likely continue to gain traction. This post is full of actionable 
+                         insights to help you create a successful event. From what to look
+                          for in a global event planning software to ways to incorporate
+                           varying cultures, we’ve got you cove
+				</p>
+			</div>
+		</div>
+
+		<div class="events">
+			<ul>
+				<li>
+					<div class="time">
+						<h2>
+							4 <br><span>December</span>
+						</h2>
+					</div>
+					<div class="details">
+						<h3>
+							NATO FOREIGN AFFAIRS MEETING
+						</h3>
+						
+<p>
+    The ministerial meeting will take place at the Palace of the Parliament of Romania, 2-4 Izvor Street, Bucharest. The main conference room and all meeting-related facilities, the media centre and media facilities will be located at the Palace of the Parliament.
+                    		</p>
+
+
+						<a href="file:///C:/Users/gowth/event.html#">View Details</a>
+					</div>
+					<div style="clear: both;"></div>
+				</li>
+
+				<li>
+					<div class="time">
+						<h2>
+							10 <br><span>December</span>
+						</h2>
+					</div>
+					<div class="details">
+						<h3>
+							NOBEL PEACE PRIZE CERYMONY
+						</h3>
+						
+<p>
+    stipulated in the will of the Swedish-born inventor
+    and  the Nobel Prizes inphysics, chemistry, physiology
+     or medicine and literature  are awarded in Stockholm
+    Sweden, while the Nobel Peace Prize is awarded in Oslo,
+     Norway. he established on 1968 on the occasion of the Riksbank’s 300th anniversary.
+
+						</p>
+
+						<a href="file:///C:/Users/gowth/event.html#">View Details</a>
+					</div>
+					<div style="clear:both;"></div>
+				</li>
+
+				<li>
+					<div class="time">
+						<h2>
+							13 <br><span>December</span>
+						</h2>
+					</div>
+					<div class="details">
+						<h3>
+							EUROPIAN COUNCIL OF SUMMIT
+						</h3>
+						
+<p>
+    The European IP Helpdesk and the International IPR Helpdesks will be present at the EIC Summit with an institutional stand, together with some other EU initiatives, to welcome all the funded services on internationalization and IP protection for European SMEs.
+						</p>
+
+
+						<a href="file:///C:/Users/gowth/event.html#">View Details</a>
+					</div>
+                    </li><li>
+                        <div class="time">
+                            <h2>
+                                30 <br><span>December</span>
+                            </h2>
+                        </div>
+                        <div class="details">
+                            <h3>
+                               GENERAL ELECTION IN BANGLADESH
+                            </h3>
+                            
+    <p>
+        “Prime Minister Sheikh Hasina has repeatedly said that Bangladesh is a mature democracy capable of conducting elections and a peaceful transition of power, but instead previous polls have been marked by violence, attacks on the opposition, and voter intimidation,”  at Human Rights Watch. 
+                            </p>
+    
+    
+                            <a href="file:///C:/Users/gowth/event.html#">View Details</a>
+                        </div>
+                        <div style="clear:both;"></div>
+                    </li>
+					<div style="clear:both;"></div>
+				
+                
+			</ul>
+		</div>
+	</section>
+
+
+
+</body>
+</html>
